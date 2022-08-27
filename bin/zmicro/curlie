@@ -1,0 +1,17 @@
+#!/bin/bash
+
+help() {
+  echo "Usage:"
+  echo "  zmicro curlie <args ...>"
+  echo ""
+}
+
+core() {
+  curlie "$@"
+}
+
+run() {
+  core "$@"
+}
+
+run "$@"
